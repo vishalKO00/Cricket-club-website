@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #1c5eec;
+  color: white;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="about-section">
+  <h1>Bowling Lessons</h1>
+  <p>we have Legends who will guide you through out your career</p>
+
+</div>
+<h2 style="text-align:center">Our Team</h2>
+<div class="column">
+  <div class="card">
+    <img src="/image/boom.jpg" alt="" style="width:100%">
+    <div class="container">
+      <h2>Jasprit Bumrah</h2>
+      <p class="title">The Goat of Indian cricket</p>
+      <p>The Perfect and best Bowler of India with pace and unique action and huge records</p>
+      <p>
+        <a href="bumrah.html">
+            <button class="button">Contact</button>
+        </a>
+    </p>
+    
+
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="/image/bhaji2.jpg" alt="" style="width:100%">
+      <div class="container">
+        <h2>Harbhajan Singh</h2>
+        <p class="title">Best Off spinner India</p>
+        <p>one of the best off spin bowler with immense success in wickets</p>
+        <p>
+          <a href="harbhajan.html">
+              <button class="button">Contact</button>
+          </a>
+      </p>
+      
+      </div>
+    </div>
+  </div>
+
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="/image/bhuvenshwar.jpg" alt="" style="width:100%">
+      <div class="container">
+        <h2>Bhuvneshwar Kumar</h2>
+        <p class="title">Great swing bowler</p>
+        <p>Bhuvneshwar Kumar Singh, often known as Bhuvi, also regarded as “Swing King” and “Swing Sulthan”</p>
+        <p>
+          <a href="/MS-dhoni-academy-main/src/bhuvneshwar.html">
+              <button class="button">Contact</button>
+          </a>
+      </p>
+      
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
